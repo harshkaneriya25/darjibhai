@@ -1,0 +1,599 @@
+/* =========================================================
+   DARJIBHAI ADMIN - COMMON FORMS
+   ========================================================= */
+
+.admin-form-label {
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    color: #444444;
+}
+
+.admin-form-control,
+.admin-form-select {
+    width: 100%;
+
+    min-height: 42px;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 8px;
+
+    padding: 8px 12px;
+
+    font-size: 13px;
+
+    color: #333333;
+
+    background: #ffffff;
+
+    outline: none;
+
+    transition: 0.2s ease;
+}
+
+.admin-form-control:focus,
+.admin-form-select:focus {
+    border-color: #f58220;
+
+    box-shadow:
+        0 0 0 3px rgba(245, 130, 32, 0.10);
+}
+
+textarea.admin-form-control {
+    min-height: 100px;
+
+    resize: vertical;
+}
+
+.admin-form-group {
+    margin-bottom: 16px;
+}
+
+.admin-required {
+    color: #dc3545;
+}
+
+.form-help {
+    display: block;
+
+    margin-top: 5px;
+
+    font-size: 11px;
+
+    color: #999999;
+}
+
+/* =========================================================
+   DARJIBHAI ADMIN - COMMON FORMS
+========================================================= */
+
+
+/* ---------------------------------------------------------
+   FORM LABEL
+--------------------------------------------------------- */
+
+.admin-form-label {
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    color: #444444;
+}
+
+
+/* ---------------------------------------------------------
+   FORM INPUT / SELECT
+--------------------------------------------------------- */
+
+.admin-form-control,
+.admin-form-select {
+    width: 100%;
+
+    min-height: 42px;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 8px;
+
+    padding: 8px 12px;
+
+    font-size: 13px;
+
+    color: #333333;
+
+    background: #ffffff;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+
+/* ---------------------------------------------------------
+   FOCUS
+--------------------------------------------------------- */
+
+.admin-form-control:focus,
+.admin-form-select:focus {
+
+    border-color: #f58220;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 0 0 3px rgba(245, 130, 32, 0.10);
+
+}
+
+
+/* ---------------------------------------------------------
+   PLACEHOLDER
+--------------------------------------------------------- */
+
+.admin-form-control::placeholder {
+
+    color: #aaaaaa;
+
+    font-size: 12px;
+
+}
+
+
+/* ---------------------------------------------------------
+   TEXTAREA
+--------------------------------------------------------- */
+
+textarea.admin-form-control {
+
+    min-height: 100px;
+
+    resize: vertical;
+
+}
+
+
+/* ---------------------------------------------------------
+   FORM GROUP
+--------------------------------------------------------- */
+
+.admin-form-group {
+
+    margin-bottom: 16px;
+
+}
+
+
+/* ---------------------------------------------------------
+   REQUIRED
+--------------------------------------------------------- */
+
+.admin-required {
+
+    color: #dc3545;
+
+}
+
+
+/* ---------------------------------------------------------
+   HELP TEXT
+--------------------------------------------------------- */
+
+.form-help {
+
+    display: block;
+
+    margin-top: 5px;
+
+    font-size: 11px;
+
+    color: #999999;
+
+}
+
+
+/* =========================================================
+   DARJIBHAI ADMIN - COMMON MODALS
+========================================================= */
+
+
+/* ---------------------------------------------------------
+   MODAL CONTENT
+--------------------------------------------------------- */
+
+.modal-content {
+
+    border: none;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 15px 50px rgba(0, 0, 0, 0.15);
+
+}
+
+
+/* ---------------------------------------------------------
+   MODAL HEADER
+--------------------------------------------------------- */
+
+.modal-header {
+
+    padding: 18px 22px;
+
+    border-bottom: 1px solid #eeeeee;
+
+    background: #ffffff;
+
+}
+
+
+/* ---------------------------------------------------------
+   MODAL TITLE
+--------------------------------------------------------- */
+
+.modal-title {
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    color: #222222;
+
+}
+
+
+/* ---------------------------------------------------------
+   MODAL BODY
+--------------------------------------------------------- */
+
+.modal-body {
+
+    padding: 22px;
+
+}
+
+
+/* ---------------------------------------------------------
+   MODAL FOOTER
+--------------------------------------------------------- */
+
+.modal-footer {
+
+    padding: 15px 22px;
+
+    border-top: 1px solid #eeeeee;
+
+    background: #ffffff;
+
+}
+
+
+/* ---------------------------------------------------------
+   CLOSE BUTTON
+--------------------------------------------------------- */
+
+.modal-header .btn-close {
+
+    opacity: 0.6;
+
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
+
+}
+
+
+.modal-header .btn-close:hover {
+
+    opacity: 1;
+
+    transform: rotate(90deg);
+
+}
+
+
+.modal-header .btn-close:focus {
+
+    box-shadow: none;
+
+}
+
+
+/* =========================================================
+   MODAL ICON
+========================================================= */
+
+.modal-icon {
+
+    width: 42px;
+
+    height: 42px;
+
+    border-radius: 10px;
+
+    background: #fff1e5;
+
+    color: #f58220;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-right: 10px;
+
+    font-size: 17px;
+
+}
+
+
+/* =========================================================
+   DELETE MODAL
+========================================================= */
+
+
+/* ---------------------------------------------------------
+   DELETE ICON
+--------------------------------------------------------- */
+
+.delete-modal-icon {
+
+    width: 55px;
+
+    height: 55px;
+
+    border-radius: 50%;
+
+    background: #fff0f0;
+
+    color: #dc3545;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin: 0 auto 15px;
+
+    font-size: 22px;
+
+}
+
+
+/* ---------------------------------------------------------
+   DELETE CONTENT
+--------------------------------------------------------- */
+
+.delete-modal-content {
+
+    text-align: center;
+
+}
+
+
+.delete-modal-content h5 {
+
+    margin-bottom: 7px;
+
+    font-weight: 700;
+
+    color: #222222;
+
+}
+
+
+.delete-modal-content p {
+
+    color: #888888;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    margin: 0;
+
+}
+
+
+/* =========================================================
+   MODAL BUTTONS
+========================================================= */
+
+.modal-footer .btn {
+
+    min-height: 38px;
+
+    padding: 7px 16px;
+
+    border-radius: 8px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+}
+
+
+/* ---------------------------------------------------------
+   ORANGE BUTTON
+--------------------------------------------------------- */
+
+.modal-footer .btn-orange {
+
+    background: #f58220;
+
+    border-color: #f58220;
+
+    color: #ffffff;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+
+}
+
+
+.modal-footer .btn-orange:hover {
+
+    background: #e66f0d;
+
+    border-color: #e66f0d;
+
+    color: #ffffff;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 5px 12px rgba(245, 130, 32, 0.20);
+
+}
+
+
+/* ---------------------------------------------------------
+   LIGHT BUTTON
+--------------------------------------------------------- */
+
+.modal-footer .btn-light {
+
+    background: #f5f5f5;
+
+    border-color: #eeeeee;
+
+    color: #555555;
+
+}
+
+
+.modal-footer .btn-light:hover {
+
+    background: #eeeeee;
+
+    border-color: #dddddd;
+
+}
+
+
+/* ---------------------------------------------------------
+   DANGER BUTTON
+--------------------------------------------------------- */
+
+.modal-footer .btn-danger {
+
+    background: #dc3545;
+
+    border-color: #dc3545;
+
+    color: #ffffff;
+
+}
+
+
+.modal-footer .btn-danger:hover {
+
+    background: #bb2d3b;
+
+    border-color: #bb2d3b;
+
+}
+
+
+/* =========================================================
+   FORM SWITCH
+========================================================= */
+
+.form-check-input {
+
+    cursor: pointer;
+
+}
+
+
+.form-check-input:checked {
+
+    background-color: #f58220;
+
+    border-color: #f58220;
+
+}
+
+
+.form-check-input:focus {
+
+    border-color: #f58220;
+
+    box-shadow:
+        0 0 0 3px rgba(245, 130, 32, 0.10);
+
+}
+
+
+.form-check-label {
+
+    cursor: pointer;
+
+    font-size: 12px;
+
+    color: #555555;
+
+}
+
+
+/* =========================================================
+   MODAL RESPONSIVE
+========================================================= */
+
+@media (max-width: 576px) {
+
+    .modal-body {
+
+        padding: 18px;
+
+    }
+
+    .modal-header {
+
+        padding: 15px 18px;
+
+    }
+
+    .modal-footer {
+
+        padding: 12px 18px;
+
+    }
+
+    .modal-title {
+
+        font-size: 15px;
+
+    }
+
+    .admin-form-control,
+    .admin-form-select {
+
+        min-height: 40px;
+
+    }
+
+}

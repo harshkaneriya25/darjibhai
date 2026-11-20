@@ -1,0 +1,353 @@
+/* =========================================================
+   DARJIBHAI ADMIN LAYOUT
+========================================================= */
+
+body {
+    background: #f6f7f9;
+    color: #222;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #111111;
+    color: #ffffff;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease;
+}
+
+.sidebar-brand {
+    height: 75px;
+    padding: 0 22px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #292929;
+}
+
+.brand-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background: #f58220;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    font-size: 19px;
+}
+
+.brand-name {
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.brand-name span {
+    color: #f58220;
+}
+
+.sidebar-menu {
+    flex: 1;
+    padding: 20px 12px;
+    overflow-y: auto;
+    overflow-x: hidden;
+     scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.menu-title {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #777;
+    padding: 13px 14px 8px;
+    font-weight: 700;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    color: #bcbcbc;
+    text-decoration: none;
+    padding: 12px 14px;
+    border-radius: 10px;
+    margin-bottom: 4px;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+.menu-item i {
+    width: 20px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.menu-item:hover {
+    color: #ffffff;
+    background: #202020;
+}
+
+.menu-item.active {
+    color: #ffffff;
+    background: #f58220;
+    box-shadow: 0 5px 15px rgba(245, 130, 32, 0.22);
+}
+
+.sidebar-footer {
+    padding: 15px;
+    border-top: 1px solid #292929;
+}
+
+.sidebar-admin {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.admin-avatar {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    border-radius: 50%;
+    background: #f58220;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.admin-info {
+    min-width: 0;
+}
+
+.admin-info strong {
+    display: block;
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.admin-info small {
+    color: #999;
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.main-wrapper {
+    margin-left: 260px;
+    min-height: 100vh;
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.top-navbar {
+    height: 75px;
+    background: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 900;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.mobile-menu-btn {
+    display: none;
+    border: none;
+    background: transparent;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.page-heading h4 {
+    margin: 0;
+    font-weight: 750;
+    color: #151515;
+}
+
+.page-heading p {
+    margin: 3px 0 0;
+    color: #888;
+    font-size: 12px;
+}
+
+.navbar-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-profile-info {
+    text-align: right;
+}
+
+.navbar-profile-info strong {
+    display: block;
+    font-size: 13px;
+}
+
+.navbar-profile-info span {
+    font-size: 11px;
+    color: #888;
+}
+
+.navbar-avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #fff1e5;
+    color: #f58220;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.admin-content {
+    padding: 30px;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.admin-footer {
+    margin-left: 260px;
+    min-height: 65px;
+    padding: 18px 30px;
+    background: #ffffff;
+    border-top: 1px solid #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #888888;
+    font-size: 12px;
+}
+
+.footer-left {
+    display: flex;
+    gap: 5px;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.footer-right i {
+    color: #f58220;
+}
+
+
+/* =========================================================
+   MOBILE OVERLAY
+========================================================= */
+
+.sidebar-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 999;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .sidebar {
+        left: -260px;
+    }
+
+    .sidebar.show {
+        left: 0;
+    }
+
+    .sidebar-overlay.show {
+        display: block;
+    }
+
+    .main-wrapper {
+        margin-left: 0;
+    }
+
+    .admin-footer {
+        margin-left: 0;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .top-navbar {
+        padding: 0 20px;
+    }
+
+    .admin-content {
+        padding: 20px;
+    }
+}
+
+
+@media (max-width: 575px) {
+
+    .navbar-profile-info {
+        display: none;
+    }
+
+    .page-heading p {
+        display: none;
+    }
+
+    .top-navbar {
+        height: 65px;
+    }
+
+    .admin-content {
+        padding: 15px;
+    }
+
+    .admin-footer {
+        padding: 15px;
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+
+}

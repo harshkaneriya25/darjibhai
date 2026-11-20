@@ -1,0 +1,28 @@
+.custom-validation-message {
+    min-height: 0;
+    margin-top: 5px;
+    color: #b42318;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.custom-validation-message:empty { display: none; }
+
+input.is-invalid,
+select.is-invalid,
+textarea.is-invalid {
+    border-color: #dc3545 !important;
+    box-shadow: 0 0 0 3px rgba(220, 53, 69, .12) !important;
+}
+
+/* Bootstrap adds a trailing error glyph inside invalid inputs. Inline feedback
+   already supplies the error state, and that glyph collides with password eyes. */
+input.is-invalid,
+select.is-invalid,
+textarea.is-invalid {
+    background-image: none !important;
+}
+
+input.is-invalid:focus,
+select.is-invalid:focus,
+textarea.is-invalid:focus { outline-color: #dc3545; }

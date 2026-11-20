@@ -1,0 +1,397 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f5f5;
+}
+
+.auth-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background: linear-gradient(
+        135deg,
+        #111111 0%,
+        #1d1d1d 50%,
+        #ff6b00 100%
+    );
+}
+
+.auth-container {
+    width: 100%;
+    max-width: 1100px;
+    min-height: 650px;
+
+    display: grid;
+    grid-template-columns: 42% 58%;
+
+    background: #ffffff;
+    border-radius: 24px;
+    overflow: hidden;
+
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================
+   BRAND SECTION
+========================= */
+
+.auth-brand {
+    padding: 55px 45px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background: linear-gradient(
+        145deg,
+        #111111,
+        #222222
+    );
+
+    color: #ffffff;
+}
+
+.brand-logo {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+
+.brand-logo span {
+    color: #ffffff;
+}
+
+.brand-logo strong {
+    color: #ff6b00;
+}
+
+.auth-brand h1 {
+    font-size: 34px;
+    line-height: 1.2;
+    margin: 0 0 18px;
+}
+
+.auth-brand p {
+    color: #cccccc;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+.brand-features {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    color: #eeeeee;
+    font-size: 15px;
+}
+
+.feature-item i {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: #ff6b00;
+    color: #ffffff;
+}
+
+.auth-home-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    align-self: flex-start;
+    margin-top: 38px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    background: #ff6b00;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.auth-home-link:hover {
+    color: #ffffff;
+    background: #e85f00;
+}
+
+
+/* =========================
+   FORM SECTION
+========================= */
+
+.auth-form-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 45px;
+    background: #ffffff;
+}
+
+.auth-form {
+    width: 100%;
+    max-width: 480px;
+}
+
+.form-heading {
+    margin-bottom: 25px;
+}
+
+.form-heading h2 {
+    margin: 0 0 8px;
+
+    font-size: 30px;
+    color: #171717;
+}
+
+.form-heading p {
+    margin: 0;
+    color: #777777;
+}
+
+
+/* =========================
+   ALERT
+========================= */
+
+.alert {
+    padding: 13px 15px;
+    margin-bottom: 20px;
+
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.alert-error {
+    background: #fff0f0;
+    color: #c62828;
+    border: 1px solid #ffcaca;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.form-group {
+    margin-bottom: 17px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #333333;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-group label i {
+    color: #ff6b00;
+    margin-right: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+
+    outline: none;
+
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+.password-input-wrap {
+    position: relative;
+}
+
+.password-input-wrap input {
+    padding-right: 48px;
+}
+
+.password-visibility-btn {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 6px;
+    background: transparent;
+    color: #777777;
+    cursor: pointer;
+}
+
+.password-visibility-btn:hover,
+.password-visibility-btn:focus-visible {
+    color: #ff6b00;
+    outline: none;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #ff6b00;
+
+    box-shadow:
+        0 0 0 3px rgba(255, 107, 0, 0.10);
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.auth-btn {
+    width: 100%;
+
+    margin-top: 5px;
+
+    padding: 14px 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: linear-gradient(
+        135deg,
+        #ff6b00,
+        #ff8500
+    );
+
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+.auth-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(255, 107, 0, 0.30);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.auth-footer {
+    text-align: center;
+    margin-top: 22px;
+}
+
+.auth-footer p {
+    margin: 0;
+
+    color: #777777;
+    font-size: 14px;
+}
+
+.auth-footer a {
+    color: #ff6b00;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 850px) {
+
+    .auth-container {
+        grid-template-columns: 1fr;
+    }
+
+    .auth-brand {
+        padding: 35px;
+    }
+
+    .auth-brand h1 {
+        font-size: 28px;
+    }
+
+    .auth-form-section {
+        padding: 35px 25px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .auth-page {
+        padding: 15px;
+    }
+
+    .auth-container {
+        border-radius: 16px;
+    }
+
+    .auth-brand {
+        padding: 30px 25px;
+    }
+
+    .auth-form-section {
+        padding: 30px 20px;
+    }
+
+    .brand-features {
+        gap: 14px;
+    }
+    
+    .alert-success {
+        background: #effaf3;
+        color: #218739;
+        border: 1px solid #bce8c7;
+    }
+}

@@ -1,0 +1,226 @@
+/* =========================================================
+   SIDEBAR & LAYOUT THEME (DARK SIDEBAR + WHITE SCISSORS)
+========================================================= */
+
+body {
+    background-color: #f8fafc;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Fixed Dark Sidebar */
+.admin-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background: #121316;
+    display: flex;
+    flex-direction: column;
+    z-index: 1040;
+    border-right: 1px solid #1e2025;
+}
+
+/* Sidebar Brand Header */
+.sidebar-brand {
+    height: 78px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 1px solid #1e2025;
+}
+
+.sidebar-brand a {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Orange Square Badge Container */
+.sidebar-brand .brand-badge {
+    width: 44px;
+    height: 44px;
+    background: #ff7700 !important;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(255, 119, 0, 0.35);
+}
+
+/* Pure White Scissors Icon */
+.sidebar-brand .brand-badge i,
+.sidebar-brand .brand-badge svg {
+    color: #ffffff !important;
+    fill: #ffffff !important;
+    font-size: 1.35rem;
+    line-height: 1;
+    display: block;
+}
+
+/* Logo Text in Dark Sidebar */
+.admin-sidebar .darjibhai-logo {
+    font-size: 1.65rem;
+    font-weight: 800;
+    color: #ffffff !important;
+    letter-spacing: -0.5px;
+    line-height: 1;
+}
+
+.admin-sidebar .darjibhai-logo span {
+    color: #ff7700 !important;
+}
+
+/* Logo Text in Top Navbar (Dark on White) */
+.top-navbar .darjibhai-logo,
+.navbar-brand .darjibhai-logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #0f172a !important;
+    letter-spacing: -0.5px;
+}
+
+.top-navbar .darjibhai-logo span,
+.navbar-brand .darjibhai-logo span {
+    color: #ff7700 !important;
+}
+
+/* Menu Items */
+.sidebar-menu {
+    flex: 1;
+    padding: 18px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    overflow-y: auto;
+}
+
+.sidebar-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #555b66;
+    padding: 18px 14px 8px;
+    letter-spacing: 0.9px;
+    display: block;
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 16px;
+    color: #9ea5b1;
+    text-decoration: none;
+    font-size: 0.96rem;
+    font-weight: 500;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+}
+
+.sidebar-link i {
+    font-size: 1.15rem;
+    width: 22px;
+    text-align: center;
+    color: #9ea5b1;
+}
+
+.sidebar-link:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.sidebar-link:hover i {
+    color: #ffffff;
+}
+
+.sidebar-link.active {
+    background: #ff7700;
+    color: #ffffff;
+    font-weight: 600;
+    box-shadow: 0 4px 14px rgba(255, 119, 0, 0.35);
+}
+
+.sidebar-link.active i {
+    color: #ffffff;
+}
+
+.sidebar-link.text-danger {
+    color: #f87171 !important;
+}
+
+.sidebar-link.text-danger i {
+    color: #f87171 !important;
+}
+
+.sidebar-link.text-danger:hover {
+    background: rgba(239, 68, 68, 0.12) !important;
+    color: #ef4444 !important;
+}
+
+/* Main Content Area */
+.main-wrapper {
+    margin-left: 260px;
+    min-height: 0;
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8fafc;
+}
+
+.admin-content {
+    flex: 1;
+    flex-shrink: 0;
+    padding: 2rem;
+}
+
+/* Statistics Cards */
+.dashboard-statistics .dashboard-stat {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dashboard-statistics .dashboard-stat:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.dashboard-stat .stat-info span {
+    display: block;
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #64748b;
+    margin-bottom: 6px;
+    letter-spacing: 0.5px;
+}
+
+.dashboard-stat .stat-info strong {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #0f172a;
+    line-height: 1;
+}
+
+.dashboard-stat .stat-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.35rem;
+    background: #fff4eb;
+    color: #ff7700;
+}

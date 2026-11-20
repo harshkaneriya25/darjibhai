@@ -1,0 +1,74 @@
+/* =========================================================
+   DARJIBHAI ADMIN - FOOTER
+   ========================================================= */
+
+.admin-footer {
+    /* Most management pages render the footer after the main wrapper. */
+    margin-left: var(--sidebar-width, 260px);
+    width: calc(100% - var(--sidebar-width, 260px));
+    box-sizing: border-box;
+    flex-shrink: 0;
+
+    min-height: 65px;
+
+    padding: 18px 30px;
+
+    background: #ffffff;
+
+    border-top: 1px solid #eeeeee;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: #888888;
+
+    font-size: 12px;
+}
+
+/* Dashboard pages render the footer inside the already offset wrapper. */
+.main-wrapper > .admin-footer,
+.admin-main > .admin-footer {
+    margin-left: 0;
+    width: 100%;
+}
+
+.footer-left {
+    display: flex;
+
+    gap: 5px;
+}
+
+.footer-right {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+}
+
+.footer-right i {
+    color: #f58220;
+}
+
+@media (max-width: 575px) {
+
+    .admin-footer {
+        padding: 15px;
+
+        flex-direction: column;
+
+        gap: 8px;
+
+        text-align: center;
+    }
+}
+
+@media (max-width: 991px) {
+    .admin-footer,
+    .main-wrapper > .admin-footer,
+    .admin-main > .admin-footer {
+        margin-left: 0;
+        width: 100%;
+    }
+}

@@ -1,0 +1,175 @@
+/* =========================================================
+   DARJIBHAI ADMIN - NAVBAR
+   ========================================================= */
+
+.top-navbar {
+    height: 75px;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #eeeeee;
+
+    padding: 0 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 900;
+}
+
+/* ---------------------------------------------------------
+   LEFT
+--------------------------------------------------------- */
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+}
+
+/* ---------------------------------------------------------
+   BRAND TEXT
+--------------------------------------------------------- */
+
+.navbar-brand {
+    font-size: 18px;
+
+    font-weight: 800;
+
+    color: #151515;
+
+    letter-spacing: 0.2px;
+}
+
+/* ---------------------------------------------------------
+   MOBILE BUTTON
+--------------------------------------------------------- */
+
+.mobile-menu-btn {
+    display: none;
+
+    border: none;
+
+    background: transparent;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    color: #222222;
+}
+
+/* ---------------------------------------------------------
+   PAGE HEADING
+--------------------------------------------------------- */
+
+.page-heading h4 {
+    margin: 0;
+
+    font-weight: 750;
+
+    color: #151515;
+}
+
+.page-heading p {
+    margin: 3px 0 0;
+
+    color: #888888;
+
+    font-size: 12px;
+}
+
+/* ---------------------------------------------------------
+   PROFILE
+--------------------------------------------------------- */
+
+.navbar-profile {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.navbar-profile-info {
+    text-align: right;
+}
+
+.navbar-profile-info strong {
+    display: block;
+
+    font-size: 13px;
+}
+
+.navbar-profile-info span {
+    font-size: 11px;
+
+    color: #888888;
+}
+
+.navbar-avatar {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    background: #fff1e5;
+
+    color: #f58220;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 800;
+}
+
+.darjibhai-logo {
+    font-size: 32px;
+    font-weight: 800;
+    color: #111827;
+    line-height: 1;
+}
+
+.darjibhai-logo span {
+    color: #f97316;
+}
+
+/* ---------------------------------------------------------
+   RESPONSIVE
+--------------------------------------------------------- */
+
+@media (max-width: 991px) {
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .top-navbar {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 575px) {
+
+    .navbar-profile-info {
+        display: none;
+    }
+
+    .page-heading p {
+        display: none;
+    }
+
+    .navbar-brand {
+        font-size: 16px;
+    }
+
+    .top-navbar {
+        height: 65px;
+    }
+}

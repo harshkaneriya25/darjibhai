@@ -1,0 +1,267 @@
+/* =========================================================
+   DARJIBHAI ADMIN - SIDEBAR
+   ========================================================= */
+
+.sidebar {
+    width: 260px;
+    height: 100vh;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    background: #111111;
+    color: #ffffff;
+
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: 0.3s ease;
+}
+
+/* ---------------------------------------------------------
+   LOGO
+--------------------------------------------------------- */
+
+.sidebar-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 20px;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.sidebar-logo i {
+    font-size: 27px;
+    color: #f97316;
+}
+
+.sidebar-logo > span {
+    color: white;
+}
+
+.sidebar-logo > span span {
+    color: #f97316;
+}
+
+/* ---------------------------------------------------------
+   BRAND
+--------------------------------------------------------- */
+
+.sidebar-brand {
+    height: 75px;
+
+    padding: 0 22px;
+
+    display: flex;
+    align-items: center;
+
+    border-bottom: 1px solid #292929;
+}
+
+.brand-icon {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 12px;
+
+    background: #f58220;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 12px;
+
+    font-size: 19px;
+}
+
+.brand-name {
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.brand-name span {
+    color: #f58220;
+}
+
+/* ---------------------------------------------------------
+   MENU
+--------------------------------------------------------- */
+
+.sidebar-menu {
+    flex: 1;
+
+    padding: 20px 12px;
+
+    overflow-y: auto;
+
+    /* Hide scrollbar */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.sidebar-menu::-webkit-scrollbar {
+    display: none;
+}
+
+/* ---------------------------------------------------------
+   MENU TITLE
+--------------------------------------------------------- */
+
+.menu-title {
+    font-size: 10px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    color: #777777;
+
+    padding: 13px 14px 8px;
+
+    font-weight: 700;
+}
+
+/* ---------------------------------------------------------
+   MENU ITEM
+--------------------------------------------------------- */
+
+.menu-item {
+    display: flex;
+    align-items: center;
+
+    gap: 13px;
+
+    color: #bcbcbc;
+
+    text-decoration: none;
+
+    padding: 12px 14px;
+
+    border-radius: 10px;
+
+    margin-bottom: 4px;
+
+    font-size: 14px;
+
+    transition: 0.2s ease;
+}
+
+.menu-item i {
+    width: 20px;
+
+    text-align: center;
+
+    font-size: 15px;
+}
+
+.menu-item:hover {
+    color: #ffffff;
+
+    background: #202020;
+}
+
+.menu-item.active {
+    color: #ffffff;
+
+    background: #f58220;
+
+    box-shadow:
+        0 5px 15px rgba(245, 130, 32, 0.22);
+}
+
+/* ---------------------------------------------------------
+   SIDEBAR FOOTER
+--------------------------------------------------------- */
+
+.sidebar-footer {
+    padding: 15px;
+
+    border-top: 1px solid #292929;
+}
+
+.sidebar-admin {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.admin-avatar {
+    width: 40px;
+    height: 40px;
+
+    min-width: 40px;
+
+    border-radius: 50%;
+
+    background: #f58220;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 700;
+}
+
+.admin-info {
+    min-width: 0;
+}
+
+.admin-info strong {
+    display: block;
+
+    font-size: 13px;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+.admin-info small {
+    color: #999999;
+
+    font-size: 11px;
+}
+
+/* ---------------------------------------------------------
+   OVERLAY
+--------------------------------------------------------- */
+
+.sidebar-overlay {
+    display: none;
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.45);
+
+    z-index: 999;
+}
+
+/* ---------------------------------------------------------
+   MOBILE
+--------------------------------------------------------- */
+
+@media (max-width: 991px) {
+
+    .sidebar {
+        left: -260px;
+    }
+
+    .sidebar.show {
+        left: 0;
+    }
+
+    .sidebar-overlay.show {
+        display: block;
+    }
+}

@@ -1,0 +1,425 @@
+/* =========================================================
+   DARJIBHAI ADMIN - COMMON TABLE
+   Used by:
+   Users
+   Products
+   Job Description
+   Roles
+   Orders
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   TABLE CARD
+--------------------------------------------------------- */
+
+.admin-table-card {
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+}
+
+/* ---------------------------------------------------------
+   TABLE HEADER
+--------------------------------------------------------- */
+
+.table-header {
+    padding: 20px 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.table-header h5 {
+    margin: 0;
+    font-weight: 700;
+    color: #161616;
+}
+
+.table-header p {
+    margin: 4px 0 0;
+    color: #888888;
+    font-size: 13px;
+}
+
+/* ---------------------------------------------------------
+   TABLE
+--------------------------------------------------------- */
+
+.admin-table {
+    width: 100%;
+    margin: 0;
+}
+
+.admin-table thead th {
+    background: #fafafa;
+    color: #666666;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    padding: 14px 18px;
+    border-bottom: 1px solid #eeeeee;
+    white-space: nowrap;
+}
+
+.admin-table tbody td {
+    padding: 14px 18px;
+    vertical-align: middle;
+    font-size: 13px;
+    color: #333333;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.admin-table tbody tr {
+    transition: 0.2s ease;
+}
+
+.admin-table tbody tr:hover {
+    background: #fffaf5;
+}
+
+.admin-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* ---------------------------------------------------------
+   TABLE ACTIONS
+--------------------------------------------------------- */
+
+.table-actions {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.table-action-btn {
+    width: 34px;
+    height: 34px;
+    border: none;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.table-action-btn:hover {
+    transform: translateY(-1px);
+}
+
+/* View */
+.table-action-view {
+    background: #f3f3f3;
+    color: #333333;
+}
+
+/* Edit */
+.table-action-edit {
+    background: #fff1e5;
+    color: #f58220;
+}
+
+/* Delete */
+.table-action-delete {
+    background: #fff0f0;
+    color: #dc3545;
+}
+
+/* Dropdown Action Buttons (Border none globally) */
+.table-actions .dropdown-toggle,
+.table-actions .btn.dropdown-toggle,
+.admin-table .dropdown-toggle {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    padding: 0.35rem 0.5rem;
+    color: #64748b;
+}
+
+.table-actions .dropdown-toggle:hover,
+.table-actions .dropdown-toggle:focus,
+.table-actions .dropdown-toggle:active,
+.table-actions .show > .dropdown-toggle {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    color: #0f172a;
+    background-color: rgba(0, 0, 0, 0.04) !important;
+    border-radius: 6px;
+}
+
+/* ---------------------------------------------------------
+   ORANGE BUTTON
+--------------------------------------------------------- */
+
+.btn-orange {
+    background: #f58220;
+    border: 1px solid #f58220;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 9px 15px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.btn-orange:hover {
+    background: #d96d12;
+    border-color: #d96d12;
+    color: #ffffff;
+}
+
+.btn-orange i {
+    margin-right: 5px;
+}
+
+/* ---------------------------------------------------------
+   SEARCH
+--------------------------------------------------------- */
+
+.table-search {
+    position: relative;
+    max-width: 280px;
+}
+
+.table-search i {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999999;
+    font-size: 13px;
+}
+
+.table-search input {
+    width: 100%;
+    height: 38px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 0 12px 0 35px;
+    font-size: 13px;
+    outline: none;
+}
+
+.table-search input:focus {
+    border-color: #f58220;
+    box-shadow: 0 0 0 3px rgba(245, 130, 32, 0.10);
+}
+
+/* ---------------------------------------------------------
+   EMPTY TABLE
+--------------------------------------------------------- */
+
+.table-empty {
+    padding: 50px 20px;
+    text-align: center;
+    color: #888888;
+}
+
+.table-empty i {
+    font-size: 35px;
+    color: #cccccc;
+    margin-bottom: 10px;
+}
+
+.table-empty h6 {
+    margin: 0 0 5px;
+    color: #555555;
+}
+
+.table-empty p {
+    margin: 0;
+    font-size: 13px;
+}
+
+/* ---------------------------------------------------------
+   BADGES
+--------------------------------------------------------- */
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 9px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.status-active {
+    background: #eaf8ef;
+    color: #198754;
+}
+
+.status-inactive {
+    background: #f1f1f1;
+    color: #777777;
+}
+
+.status-pending {
+    background: #fff4df;
+    color: #c47a00;
+}
+
+.status-completed {
+    background: #eaf8ef;
+    color: #198754;
+}
+
+.status-cancelled {
+    background: #fff0f0;
+    color: #dc3545;
+}
+
+/* ---------------------------------------------------------
+   PAGINATION
+--------------------------------------------------------- */
+
+.admin-table-pagination {
+    margin-top: 14px;
+    padding: 13px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    background: linear-gradient(135deg, #ffffff 0%, #fffaf5 100%);
+    border: 1px solid #f1e7dc;
+    border-radius: 12px;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.admin-pagination-tools,
+.admin-pagination-size,
+.admin-pagination-nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.admin-pagination-size {
+    color: #64748b;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.admin-pagination-select {
+    min-width: 68px;
+    padding: 5px 26px 5px 10px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #334155;
+    font-size: 13px;
+}
+
+.admin-pagination-select:focus {
+    border-color: #f58220;
+    outline: 3px solid rgba(245, 130, 32, 0.14);
+}
+
+.admin-pagination-page {
+    min-width: 58px;
+    color: #475569;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.admin-pagination-button {
+    min-height: 34px;
+    padding: 6px 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #475569;
+    font-size: 12px;
+    font-weight: 600;
+    transition: color .15s ease, background .15s ease, border-color .15s ease, box-shadow .15s ease;
+}
+
+.admin-pagination-button:not(:disabled):hover {
+    border-color: #f58220;
+    background: #fff4e9;
+    color: #c65b08;
+    box-shadow: 0 2px 7px rgba(245, 130, 32, .12);
+}
+
+.admin-pagination-button:disabled {
+    background: #f8fafc;
+    color: #b6c0cc;
+    cursor: not-allowed;
+}
+
+.admin-pagination {
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #eeeeee;
+}
+
+.admin-pagination-info {
+    color: #888888;
+    font-size: 12px;
+}
+
+.admin-pagination .pagination {
+    margin: 0;
+}
+
+.admin-pagination .page-link {
+    color: #555555;
+    border-color: #eeeeee;
+    font-size: 12px;
+}
+
+.admin-pagination .page-item.active .page-link {
+    background: #f58220;
+    border-color: #f58220;
+    color: #ffffff;
+}
+
+/* ---------------------------------------------------------
+   RESPONSIVE
+--------------------------------------------------------- */
+
+@media (max-width: 767px) {
+    .table-header {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .table-header .btn-orange {
+        width: 100%;
+    }
+
+    .table-search {
+        max-width: none;
+        width: 100%;
+    }
+
+    .admin-table {
+        min-width: 750px;
+    }
+
+    .admin-pagination {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .admin-table-pagination {
+        align-items: stretch;
+    }
+
+    .admin-pagination-tools {
+        justify-content: space-between;
+    }
+}

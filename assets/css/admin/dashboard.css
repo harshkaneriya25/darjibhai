@@ -1,0 +1,355 @@
+/* =========================================================
+   ADMIN DASHBOARD — Darjibhai
+   Matches markup in admin/dashboard.php
+========================================================= */
+
+:root {
+    --db-orange: #ff6b00;
+    --db-orange-light: #fff1e6;
+    --db-dark: #171717;
+    --db-muted: #777777;
+    --db-border: #eeeeee;
+    --db-bg-soft: #fafafa;
+    --db-radius: 14px;
+    --db-radius-lg: 20px;
+    --db-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    --db-shadow-hover: 0 10px 28px rgba(255, 107, 0, 0.12);
+}
+
+/* ---------------------------------------------------------
+   PAGE HEADER
+--------------------------------------------------------- */
+
+.dashboard-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    margin-bottom: 24px;
+}
+
+.dashboard-header h2 {
+    margin: 0 0 4px;
+    font-weight: 700;
+    color: var(--db-dark);
+}
+
+.dashboard-header p {
+    margin: 0;
+    color: var(--db-muted);
+}
+
+/* ---------------------------------------------------------
+   STAT CARDS
+--------------------------------------------------------- */
+
+.dashboard-statistics {
+    margin-bottom: 24px;
+}
+
+.dashboard-stat {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+
+    height: 100%;
+
+    background: #ffffff;
+    border: 1px solid var(--db-border);
+    border-radius: var(--db-radius);
+    padding: 22px;
+
+    box-shadow: var(--db-shadow);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dashboard-stat:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--db-shadow-hover);
+    border-color: var(--db-orange);
+}
+
+.stat-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.stat-info span {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--db-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+.stat-info strong {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--db-dark);
+    line-height: 1;
+}
+
+.stat-icon {
+    flex-shrink: 0;
+
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+    background: var(--db-orange-light);
+    color: var(--db-orange);
+    font-size: 20px;
+}
+
+/* ---------------------------------------------------------
+   MAIN ROW (Recent Orders + Quick Info)
+--------------------------------------------------------- */
+
+.dashboard-main-row {
+    align-items: stretch;
+}
+
+.dashboard-card {
+    height: 100%;
+
+    background: #ffffff;
+    border: 1px solid var(--db-border);
+    border-radius: var(--db-radius);
+
+    box-shadow: var(--db-shadow);
+    overflow: hidden;
+}
+
+.dashboard-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+
+    padding: 20px 22px;
+    border-bottom: 1px solid var(--db-border);
+}
+
+.dashboard-card-header h5 {
+    margin: 0 0 2px;
+    font-weight: 700;
+    color: var(--db-dark);
+}
+
+.dashboard-card-header p {
+    margin: 0;
+    font-size: 13px;
+    color: var(--db-muted);
+}
+
+.dashboard-card-body {
+    padding: 22px;
+}
+
+/* Button used in card header ("View All") */
+
+.btn-orange {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    padding: 8px 16px;
+
+    background: var(--db-orange);
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.btn-orange:hover {
+    background: #e65f00;
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+/* ---------------------------------------------------------
+   RECENT ORDERS TABLE
+--------------------------------------------------------- */
+
+.admin-table {
+    margin: 0;
+    width: 100%;
+}
+
+.admin-table thead th {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    color: var(--db-muted);
+
+    border-bottom: 1px solid var(--db-border);
+    padding: 10px 12px;
+    white-space: nowrap;
+}
+
+.admin-table tbody td {
+    padding: 14px 12px;
+    font-size: 14px;
+    color: var(--db-dark);
+    border-bottom: 1px solid var(--db-border);
+    vertical-align: middle;
+}
+
+.admin-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.admin-table tbody tr:hover {
+    background: var(--db-bg-soft);
+}
+
+/* Status badges */
+
+.status-badge {
+    display: inline-block;
+
+    padding: 4px 12px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    border-radius: 999px;
+    white-space: nowrap;
+}
+
+.status-pending {
+    background: #fff4e5;
+    color: #b56a00;
+}
+
+.status-completed {
+    background: #e7f8ee;
+    color: #1b8a4c;
+}
+
+.status-cancelled {
+    background: #fdeaea;
+    color: #c62828;
+}
+
+/* Empty state */
+
+.table-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 48px 20px;
+    text-align: center;
+    color: var(--db-muted);
+}
+
+.table-empty i {
+    font-size: 30px;
+    color: var(--db-orange);
+    opacity: 0.6;
+}
+
+.table-empty p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* ---------------------------------------------------------
+   QUICK INFORMATION
+--------------------------------------------------------- */
+
+.quick-info-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    padding: 14px 0;
+    border-bottom: 1px solid var(--db-border);
+}
+
+.quick-info-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.quick-info-item:first-child {
+    padding-top: 0;
+}
+
+.quick-info-icon {
+    flex-shrink: 0;
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+    background: var(--db-orange-light);
+    color: var(--db-orange);
+    font-size: 16px;
+}
+
+.quick-info-item strong {
+    display: block;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--db-dark);
+    line-height: 1.3;
+}
+
+.quick-info-item span {
+    font-size: 13px;
+    color: var(--db-muted);
+}
+
+/* ---------------------------------------------------------
+   RESPONSIVE
+--------------------------------------------------------- */
+
+@media (max-width: 991px) {
+    .dashboard-stat {
+        padding: 18px;
+    }
+
+    .stat-info strong {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 575px) {
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dashboard-card-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dashboard-card-body {
+        padding: 16px;
+    }
+}
